@@ -18,7 +18,7 @@
   <meta name="author" content="Baz Jun">
   <meta name="keywords" content="">
   
-  <title>Hello World - 把子之家</title>
+  <title>markdown使用手册 - 把子之家</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -68,7 +68,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>把子之家</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -175,7 +175,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="markdown使用手册">
               
             </span>
 
@@ -185,8 +185,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-27 20:56" pubdate>
-        2021年8月27日 晚上
+      <time datetime="2021-08-28 21:31" pubdate>
+        2021年8月28日 晚上
       </time>
     </span>
   
@@ -197,7 +197,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      717 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      8
        分钟
     </span>
   
@@ -237,22 +237,130 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">markdown使用手册</h1>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+              <h1 id="markdown-使用手册"><a href="#markdown-使用手册" class="headerlink" title="markdown 使用手册"></a>markdown 使用手册</h1><blockquote>
+<p>主要整理的是 <strong>github</strong> 上面的 markdown (<em><strong>GFM</strong></em>) 的写法，但标准都很相近。</p>
+</blockquote>
+<ul>
+<li><a href="#markdown-%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C">markdown 使用手册</a><ul>
+<li><a href="#%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98">换行问题</a></li>
+<li><a href="#%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B">首行缩进</a></li>
+<li><a href="#%E8%B6%85%E9%93%BE%E6%8E%A5">超链接</a></li>
+<li><a href="#%E5%9B%BE%E7%89%87">图片</a></li>
+<li><a href="#vscode-markdown-%E5%BF%AB%E6%8D%B7%E9%94%AE">vscode Markdown 快捷键</a></li>
+</ul>
+</li>
+</ul>
+<br/>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>!</strong> &nbsp; <strong>注意</strong><br>在github的编辑器上编辑md文件，preview预览视图很多功能无法实现，不太推荐，比如 跳转 #锚点等</p>
+</blockquote>
+<h3 id="换行问题"><a href="#换行问题" class="headerlink" title="换行问题"></a>换行问题</h3><blockquote>
+<p>markdown 中的换行，除了部分标记符号，比如：<code>#</code>,<code>&gt;</code>,<code>*</code>等按回车键都能自动换行的，但是普通文本，必须要借助在行尾：添加<strong>双空格</strong>或<strong>反斜杠</strong></p>
+</blockquote>
+<br/>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<ul>
+<li>或者<code>双回车键</code></li>
+<li>但都不太推荐 懒懒散散的一行又一行 普通文本看起非常不规范，如果一小段普通文本想换行，推荐使用<strong>序号符</strong> <code>*</code> <code>1.</code> <code>-</code></li>
+<li><strong>html 标签附近 和代码块附近，一定要双回车，就是隔一行，不然紧接着的markdown标识符会无效</strong></li>
+</ul>
+<h3 id="首行缩进"><a href="#首行缩进" class="headerlink" title="首行缩进"></a>首行缩进</h3><ul>
+<li><p>方法一</p>
+<ul>
+<li><code>&amp;ensp;</code>或<code>&amp;#8194;</code> //半角的空格</li>
+<li><code>&amp;emsp;</code>或<code>&amp;#8195</code>; //全角的空格 <strong>推荐</strong></li>
+<li><code>&amp;nbsp;或&amp;#160;</code>  //不断行的空格<br/></li>
+</ul>
+</li>
+<li><p>方法二</p>
+<ul>
+<li>使用 <code>html</code> 的 <strong>p</strong> 标签包裹markdown, 但 <strong>p</strong> 标签中无法再使用markdown了。<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-indent=2em&quot;</span>&gt;</span>markdown<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>整行缩进</p>
+<ul>
+<li>使用 <code>tab</code> 键 或者 <code>ctrl</code> + <code>]</code></li>
+</ul>
+</li>
+</ul>
+<p><em>但很多技术文档都没有缩进； 文字间输入空格键只会产生一个空格</em></p>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><ul>
+<li>锚点跳转<blockquote>
+<p>本质都是跳转到锚点位置，也就是<code>#</code>上，或者是html标签的id上。</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li><code>[锚点名](#锚点)</code></li>
+<li>使用a标签<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#锚点名&quot;</span>&gt;</span>传送至锚点位置<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>url跳转<br>可以使用 线上地址，也可以使用文件的相对路径。</li>
+</ul>
+<br/>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>跟超链接跳转类似，只用最前面加个<code>!</code>即可</p>
+<p><em>语法</em><br><code>![图片名字](url &quot;alt&quot;)</code></p>
+<p>一般为了 markdown的<code>迁移性</code>，图片最后都使用在线地址，就是使用<code>图床</code>的地址。</p>
+<blockquote>
+<p><strong>小技巧</strong><br>有一个小技巧就是把图片上传到github同项目上的某文件夹上，url就可以写github的地址了，资源是会稳定保存，但是网速很慢。</p>
+</blockquote>
+<hr>
+<h2 id="vscode-Markdown-快捷键"><a href="#vscode-Markdown-快捷键" class="headerlink" title="vscode Markdown 快捷键"></a>vscode Markdown 快捷键</h2><blockquote>
+<p>需安装 Markdown All in One</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">key</th>
+<th align="left">Command</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Ctrl</code>+<code>B</code></td>
+<td align="left">toggle bold <strong>切换粗体</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl</code>+<code>I</code></td>
+<td align="left">toggle italic <strong>切换斜体</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Alt</code>+<code>S</code></td>
+<td align="left"><strong>切换删除线</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl</code> + <code>Shift</code> + <code>[</code></td>
+<td align="left">Toggle heading    <strong>标题（上升）</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl</code> + <code>Shift</code> + <code>]</code></td>
+<td align="left">Toggle heading   <strong>标题（下降）</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Alt</code> + <code>C</code></td>
+<td align="left">Check/Uncheck task list item   <strong>选表单切换</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl</code> + <code>]</code>  /  <code>TAB</code></td>
+<td align="left"><code>缩进</code> 光标停靠位置处，操作两次，<strong>生成单行代码</strong></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl</code>+<code>Shift</code>+<code>F</code></td>
+<td align="left"><strong>表格格式化</strong></td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>Other</strong><ul>
+<li>剪贴板中带有 url 路径，选中某文字，<code>Ctrl</code> +<code>V</code> ，可以自动生成该文字命名的超链接。</li>
+<li>还可以自动生成目录 &gt; F1 &gt; markdown all in one : 创建目录 。</li>
+<li>可直接在 文档开头 输入 <strong>[TOC]</strong> 生成目录 (可惜github上无法显示,移植性很差，不推荐)</li>
+</ul>
+</li>
+</ul>
 
             </div>
             <hr>
@@ -273,15 +381,15 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2021/08/28/what-is-good/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">what is good</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2021/08/27/%E4%BD%A0%E5%A5%BD/">
-                        <span class="hidden-mobile">你好</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
